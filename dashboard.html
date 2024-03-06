@@ -13,8 +13,16 @@
     <br>
     <div class="card">
         <h2>Daily Goals: </h2>
-        <div class="inner-card" id="dGoalsCard"></div>
+        <div class="inner-card" id="dGoalsCard">
+	        <form>
+		    <input type="text" id="goal-input">
+		    <button id="btn">Add Goal</button>
+		</form>
+		<ul id="dGoalCardUl"></ul>
+	</div>
     </div>
-	<script src="dashboard.js"></script>
+	<script>
+            let dGoalCardUl = document.getElementById("dGoalCardUl").innerHTML;
+	</script>
   </body>
 </html>
