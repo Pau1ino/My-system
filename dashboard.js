@@ -1,9 +1,12 @@
-let goalInput = document.getElementById("goal-input").textContent;
-let btn = document.getElementById("btn");
-let dGoalCardUl = document.getElementById("dGoalCardUl");
+let btn = document.getElementById('btn');
+let input = document.getElementById('input');
+let ul = document.getElementById("goalUl");
 
-btn.addEventListener("click", ()=>{
-	let node = document.createElement("li");
-	node.textContent = goalInput;
-  	dGoalCardUl.appendChild(node);
-});
+btn.addEventListener('click', function () {
+    if(input.value.length > 0){
+        let li = document.createElement("li");
+        li.textContent = input.value;
+        ul.appendChild(li);
+        input.value = "";
+    } else {alert("You need to input a goal first")};
+})
