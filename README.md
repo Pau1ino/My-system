@@ -1,2 +1,2 @@
-# super-duper-system
-— https://pau1ino.github.io/super-duper-system/
+# My System
+[My System Website](https://pau1ino.github.io/super-duper-system/)
