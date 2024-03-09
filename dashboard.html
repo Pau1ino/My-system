@@ -11,18 +11,36 @@
 
 <body>
     <h1>Dashboard</h1>
+    
     <br>
     <br>
+    
     <div class="card">
         <h2>Daily Goals: </h2>
         <div class="inner-card" id="dGoalsCard">
-            
                 <input type="text" id="input">
                 <button id="btn">Add Goal</button>
-            
             <ul id="goalUl"></ul>
         </div>
-    </div>
+    </div>    <!-- Card End -->
+
+    <div id="journal-section">
+        <label for="journal">Add Journal entry: </label>
+        <input type="text" name="journal" id="journal">
+        
+        <div id="journal-header">
+            <!-- Timestamp -->
+            <h1>@</h1>
+            <h1 id="timestamp"></h1>
+            <h1 id="journal-entry-title"></h1>
+        </div>
+        
+        <div id="journal-body">   
+        </div>
+    </div>  <!-- Journal End -->
+
+
+    
     <script src="dashboard.js"></script>
 </body>
 
