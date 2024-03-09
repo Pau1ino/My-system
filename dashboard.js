@@ -23,7 +23,7 @@ entry.addEventListener("click", function () {
     if (journalInput.length && journalTitle.length > 0) {
         //Grab time
         let time = new Date().toLocaleString();;
-        time = time.slice(0,10);
+        time = time.slice(0,17);
         let t = document.createElement("h5");
         t.textContent = time;
         
