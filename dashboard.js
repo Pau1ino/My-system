@@ -21,6 +21,12 @@ entry.addEventListener("click", function () {
     let journalTitle = document.getElementById("journalT").value;  //Journal title
 
     if (journalInput.length && journalTitle.length > 0) {
+        //Grab time
+        let time = new Date().toLocaleString();;
+        time = time.slice(0,10);
+        let t = document.createElement("h5");
+        t.textContent = time;
+        
         //Journal Content
         let p = document.createElement("p");
         p.textContent = journalInput;  //Create Paragraph and add the jounral input to it
@@ -32,6 +38,7 @@ entry.addEventListener("click", function () {
         //Div to append to parent
         let card = document.createElement("div");
         card.appendChild(h3);
+        card.appendChild(t);
         card.appendChild(p);
 
         //Append card to the parent
